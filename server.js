@@ -25,6 +25,7 @@ const PORT = 3000;
 app.use(express.json());
 
 // 2. Middleware для логування (Етап 4)
+// server.js (додайте цей код до секції MIDDLEWARE)
 const loggingMiddleware = (req, res, next) => {
   const timestamp = new Date().toISOString();
   console.log(`[${timestamp}] ${req.method} ${req.url}`);
