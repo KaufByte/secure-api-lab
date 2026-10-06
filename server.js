@@ -112,3 +112,4 @@ app.get('/employees', authMiddleware, adminOnlyMiddleware, (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
+//"feat: Implement authentication and authorization middleware"
